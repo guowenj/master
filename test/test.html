@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>每天进步一点点</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+
+    }
+    .commit{
+        width: 400px;
+        height: 200px;
+        background-color: blanchedalmond
+    };
+    .discuss{
+        width: 400px;
+        height: 200px;
+    };
+    
+</style>
+<body>
+    <div class="commit"></div>
+    <textarea class="discuss" cols="30" rows="10"></textarea>
+    <button class="btn">评论</button>
+</body>
+<script>
+    var $commit=document.querySelector('.commit');
+    $discuss=document.querySelector('.discuss');
+    $btn=document.querySelector('.btn');
+    $commit.onclick=function(){
+
+    };
+    $discuss.onclick=function(){
+
+    };
+    $btn.onclick=function(){
+        $commit.innerHTML=('<div>' + $discuss.value + '</div>');
+        $discuss.value=''
+    }
+</script>
+</html>
